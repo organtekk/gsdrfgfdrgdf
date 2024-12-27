@@ -1,0 +1,12 @@
+{
+    "settings": {
+        "license_key": "",
+        "note": "If you have purchased the DLC from t.me/tcpsyn put your license key above, server IP below, and go to 'assets/dlc/premium.json'",
+        "proxy_ip": "yourserverip"
+    },
+    "proxied_host": {
+        "backend_ip": "hostname",
+        "backend_port": 10000,
+        "optional_note": "Free version port is: 10000"
+    }
+}

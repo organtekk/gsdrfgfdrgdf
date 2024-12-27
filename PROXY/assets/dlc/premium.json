@@ -1,0 +1,54 @@
+{
+    "settings": {
+        "seconds_between_each_check": 3600
+    },
+    "global_firewall": {
+        "enabled": true,
+        "options": {
+            "blacklisting": {
+                "blacklist_ip": {
+                    "enabled": false,
+                    "block_list": []
+                },
+                "blacklisted_ranges": {
+                    "enabled": false,
+                    "block_list": []
+                }
+            },
+            "whitelisting": {
+                "whitelist_ip": {
+                    "enabled": false,
+                    "allow_list": []
+                },
+                "whitelist_range": {
+                    "enabled": false,
+                    "allow_list": []
+                }
+            }
+        }
+    },
+    "proxied_hosts": [
+        {
+            "proxy_enabled": true,
+            "proxy_port": 666,
+            "backend_ip": "127.0.0.1",
+            "backend_port": 1337,
+            "expiry": {
+                "does_expire": true,
+                "expiry_date": "9999-01-20",
+                "optional_note": "YYYY-MM-DD"
+            }
+        },
+        {
+            "proxy_enabled": false,
+            "proxy_port": 123,
+            "backend_ip": "127.0.0.1",
+            "backend_port": 9900,
+            "expiry": {
+                "does_expire": true,
+                "expiry_date": "9999-01-20",
+                "optional_note": "YYYY-MM-DD"
+            }
+        }
+    ]
+}
